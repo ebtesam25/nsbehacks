@@ -13,7 +13,7 @@ function Step1() {
     <div className="max-w-md">
       <h1 className="text-5xl text-black font-bold">Ready to get started? </h1>
       <ul class="steps">
-        <li class="step step-primary">Select Type</li>
+        <li class="step step-primary text-primary">Select Type</li>
         <li class="step">Select Features</li>
         <li class="step">Upload Document</li>
         <li class="step">View Results</li>

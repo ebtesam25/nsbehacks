@@ -10,7 +10,7 @@ function Step4() {
       <div className="hero min-h-screen bg-white">
   <div className="hero-content text-center">
     <div className="">
-      <h1 className="text-5xl text-black font-bold">Upload your documents</h1>
+      <h1 className="text-5xl text-black font-bold">Equalized!</h1>
       <ul class="steps">
         <li class="step step-primary text-primary">Select Type</li>
         <li class="step step-primary text-primary">Select Features</li>

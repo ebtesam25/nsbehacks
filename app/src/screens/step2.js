@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Features from '../components/features'
 import Footer from '../components/footer';
@@ -5,6 +6,9 @@ import Navbar from '../components/navbar';
 import '../index.css'
 
 function Step2() {
+  const [name, setname] = useState(false)
+  const [gender, setgender] = useState(false)
+  const [location, setlocation] = useState(false)
   return (
     <div>
         <Navbar/>
@@ -26,7 +30,7 @@ function Step2() {
     <h2 class="card-title">Name</h2>
     <p className="text-left">People with non english names tend to experience some form of bias duting selection processes</p>
     <div class="card-actions justify-end">
-    <input type="checkbox" class="toggle toggle-lg bg-primary" checked></input>    </div>
+    <input type="checkbox" class="toggle toggle-lg bg-primary" checked={name} onClick={()=>setname(!name)}></input>    </div>
   </div>
   </div>
   <div class="card w-96 bg-base-100 shadow-xl">
@@ -35,7 +39,7 @@ function Step2() {
     <h2 class="card-title">Gender</h2>
     <p className="text-left">Gender based bias still exists ; this would anonymizes your gender in the application system</p>
     <div class="card-actions justify-end">
-    <input type="checkbox" class="toggle toggle-lg bg-primary" checked></input>
+    <input type="checkbox" class="toggle toggle-lg bg-primary" checked={gender} onClick={()=>setgender(!gender)}></input>
     </div>
   </div>
   </div>
@@ -45,7 +49,7 @@ function Step2() {
     <h2 class="card-title">Location</h2>
     <p className="text-left">Location based bias still exists ; this would anonymizes your location in the application system</p>
     <div class="card-actions justify-end">
-    <input type="checkbox" class="toggle toggle-lg bg-primary" checked></input>
+    <input type="checkbox" class="toggle toggle-lg bg-primary" checked={location} onClick={()=>setlocation(!location)}></input>
     </div>
   </div>
   </div>
